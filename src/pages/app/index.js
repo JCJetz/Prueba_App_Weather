@@ -103,6 +103,7 @@ export function Main(){
     const isFirstRun = useRef(true);
     // Cambiar key de vuelta a process.env ! (linea 119)
     const API_KEY_TEMPORAL = "c61d237d5019d32067dcaa1fd2d5b53e";
+    const API_KEY_MAPS = "pk.eyJ1IjoiamNqZXR6IiwiYSI6ImNsM3gyYTB2ZjAwdHAzY211Z2p6YjU3d2QifQ.DVo9x545xSBmpS6I_WZu0Q";
     useEffect (() => {
             
             if (isFirstRun.current) {
@@ -310,18 +311,18 @@ export function Main(){
 
                     </WeatherDataRow>
                 </WeatherData>
-                {/*
+        
                 
-                <MapContainer style={{height: '20vh', width: '100%', borderRadius: '3rem', position: 'relative', zIndex: '500', marginTop:'2rem', marginBottom:'2rem'}} center={[location[0], location[1]]} zoom="20" scrollWheelZoom={true} zoomControl={false} attributionControl={false} dragging={true}>
+                <MapContainer style={{height: '20vh', width: '100%', borderRadius: '3rem', position: 'relative', zIndex: '500', marginTop:'2rem', marginBottom:'2rem'}} center={[location[0], location[1]]} zoom="20" scrollWheelZoom={true} zoomControl={true} attributionControl={true} dragging={true}>
                     <TileLayer
                         attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-                        url={`https://api.mapbox.com/styles/v1/mapbox/light-v10/tiles/256/{z}/{x}/{y}@2x?access_token=${process.env.REACT_APP_MAP_BOX_ACCESS_TOKEN}`}
+                        url={`https://api.mapbox.com/styles/v1/mapbox/light-v10/tiles/256/{z}/{x}/{y}@2x?access_token=${API_KEY_MAPS}`}
                     />
                     <Marker position={[location[0], location[1]]} icon={MapIcon}>
 
                     </Marker>
                 </MapContainer>
-                */}
+            
                 
 
             </Container>
