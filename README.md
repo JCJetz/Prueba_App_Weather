@@ -8,16 +8,16 @@
 
 ## ✨ GITHUB
 
-fork en github (obtener url del fork)
+forkear en github (obtener url del fork)
 
-`git remote add origin 'url del fork (propia)'`
-`git remote add upstream https://github.com/JCJetz/Prueba_App_Weather.git`
+1. `git remote add origin 'url del fork (propia)'`
+2. `git remote add upstream https://github.com/JCJetz/Prueba_App_Weather.git`
 
-`git checkout -b feature/my_feature`
-`git commit -m 'desc de la feature'`
-`git push origin feature/my_feature`
+3. `git checkout -b feature/my_feature`
+4. `git commit -m 'desc de la feature'`
+5. `git push origin feature/my_feature`
 
-pull request
+hacer pull request de la feature
 
 ...
 
